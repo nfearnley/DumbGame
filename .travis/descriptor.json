@@ -1,0 +1,16 @@
+{
+    "package": {
+        "name": "DumbGame",
+        "repo": "DumbGame",
+        "subject": "nfearnley",
+        "vcs_url": "https://github.com/nfearnley/DumbGame.git",
+        "licenses": ["MIT"]
+    },
+    "version": {
+        "name": "100.99.98"
+    },
+    "files": [
+        {"includePattern": "build/(.*)", "uploadPattern": "/$1"}
+    ],
+    "publish": true
+}

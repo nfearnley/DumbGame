@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.8"
+install:
+  - pip install .
+script:
+  - "./.travis/build.sh"
+deploy:
+  provider: bintray
+  file: "./.travis/descriptor.json"
+  user: "nfearnley"
+  key: $BINTRAY_KEY
+  skip_cleanup: true # to upload artifacts created during the build
