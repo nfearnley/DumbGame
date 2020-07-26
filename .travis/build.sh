@@ -1,1 +1,1 @@
-cp -p ./dumbgame/game.exe ./build/
+cp -p ./dumbgame/game.exe ./build/game.exe
