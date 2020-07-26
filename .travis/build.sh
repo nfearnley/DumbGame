@@ -1,1 +1,2 @@
-cp -p ./dumbgame/game.exe ./build/game.exe
+mkdir -p build
+cp dumbgame/game.exe build/game.exe
