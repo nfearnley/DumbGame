@@ -4,7 +4,7 @@ python:
 install:
   - pip install .
 script:
-  - "./.travis/build.sh"
+  - .travis/build.sh
 deploy:
   provider: bintray
   file: "./.travis/descriptor.json"
