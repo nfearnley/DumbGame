@@ -7,10 +7,10 @@
         "licenses": ["MIT"]
     },
     "version": {
-        "name": "100.99.98"
+        "name": "latest"
     },
     "files": [
-        {"includePattern": "build/(.*)", "uploadPattern": "/$1", "matrixParams": { "override": 1 } }
+        {"includePattern": "dist/(.*)", "uploadPattern": "/$1", "matrixParams": { "override": 1 } }
     ],
     "publish": true
 }
