@@ -1,2 +1,1 @@
-mkdir -p build
-cp dumbgame/game.exe build/game.exe
+pyinstaller --onefile dumbgame/__main__.py -n dumbgame --spec build
