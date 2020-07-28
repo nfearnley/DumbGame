@@ -1,10 +1,18 @@
-language: python
-python:
-  - "3.8"
+os: windows
+language: shell
+
+env:
+  - PATH=/c/Python38:/c/Python38/Scripts:$PATH
+before_install:
+  - choco install python
+
 install:
+  - python -m pip install --upgrade pip
   - pip install .[dev]
+
 script:
   - .travis/build.sh
+
 deploy:
   provider: bintray
   file: "./.travis/descriptor.json"
